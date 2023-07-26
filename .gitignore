@@ -2,3 +2,5 @@
 .Rhistory
 .RData
 .Ruserdata
+*.html
+rsconnect/shinyapps.io/umassdsl/DEPhabitat.dcf

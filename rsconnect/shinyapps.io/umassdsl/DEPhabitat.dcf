@@ -5,9 +5,9 @@ account: umassdsl
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 9512539
-bundleId: 7499676
+bundleId: 7499784
 url: https://umassdsl.shinyapps.io/DEPhabitat/
-when: 1690392149.31429
-lastSyncTime: 1690392149.31433
+when: 1690393751.31544
+lastSyncTime: 1690393751.3155
 asMultiple: FALSE
 asStatic: FALSE

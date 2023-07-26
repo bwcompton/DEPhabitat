@@ -17,7 +17,7 @@ zoom <- 8                     # starting zoom level (shows all of Massachusetts)
 
 ui <- fluidPage(
    mainPanel(
-      leafletOutput('map', width = '670')
+      leafletOutput('map', width = '680')
    )
 )
 
@@ -27,8 +27,9 @@ server <- function(input, output) {
       leaflet() |>
          addTiles(urlTemplate = '', attribution =
                      '<a href="https://www.mass.gov/orgs/massachusetts-department-of-environmental-protection"
-                      target="_blank" rel="noopener noreferrer">Mass DEP</a> | <a href="https://umassdsl.org"
-                      target="_blank" rel="noopener noreferrer">UMass DSL</a>') |>
+                      target="_blank" rel="noopener noreferrer">Mass DEP</a>
+                      | <a href="https://umassdsl.org" target="_blank" rel="noopener noreferrer">UMass DSL</a>
+                      | <a href="https://umassdsl.webgis1.com/hesk" target="_blank" rel="noopener noreferrer">Get help</a>') |>
          addProviderTiles(providers$Esri.WorldTopoMap) |>
          addWMSTiles(
             'https://umassdsl.webgis1.com/geoserver/wms',
