@@ -3,7 +3,7 @@
 # See https://github.com/bwcompton/DEPhabitat
 # Before initial deployment on shinyapps.io, need to restart R and:
 #    library(remotes); install_github('bwcompton/readMVT'); install_github('bwcompton/leaflet.lagniappe')
-# B. Compton, 26 Jul 2023 (from DEPMEP.R)
+# B. Compton, 26-27 Jul 2023 (from DEPMEP.R)
 
 
 
@@ -16,6 +16,7 @@ zoom <- 8                     # starting zoom level (shows all of Massachusetts)
 
 
 ui <- fluidPage(
+   tags$head(includeScript('inst/matomo.js')),              # add Matomo tracking JS
    mainPanel(
       leafletOutput('map', width = '680')
    )
