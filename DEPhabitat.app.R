@@ -4,6 +4,7 @@
 # See https://github.com/bwcompton/DEPhabitat
 # Before initial deployment on shinyapps.io, need to restart R and:
 #    library(remotes); install_github('bwcompton/readMVT'); install_github('bwcompton/leaflet.lagniappe')
+# Create geoTIFFs with x:\CAPS\makeCAPSland2020.R then prepare them with makeDEPhabitatTIFFs.R
 # B. Compton, 26-27 Jul 2023 (from DEPMEP.R)
 
 
@@ -17,7 +18,7 @@ zoom <- 8                     # starting zoom level (shows all of Massachusetts)
 
 
 ui <- fluidPage(
-   tags$head(includeScript('inst/matomo.js')),              # add Matomo tracking JS
+   tags$head(src = 'www/matomo.js'),              # add Matomo tracking JS
 
    mainPanel(
       leafletOutput('map', width = '680')
