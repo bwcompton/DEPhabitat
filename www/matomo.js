@@ -3,7 +3,7 @@
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
-    var u="//umassdsl.webgis1.com/piwik/";
+    var u="//marsh01.ecs.umass.edu/matomo/";
     _paq.push(['setTrackerUrl', u+'matomo.php']);
     _paq.push(['setSiteId', '7']);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
