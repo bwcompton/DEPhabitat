@@ -39,10 +39,10 @@ server <- function(input, output, session) {
                      '<a href="https://www.mass.gov/orgs/massachusetts-department-of-environmental-protection"
                       target="_blank" rel="noopener noreferrer">Mass DEP</a>
                       | <a href="https://umassdsl.org" target="_blank" rel="noopener noreferrer">UMass DSL</a>
-                      | <a href="https://umassdsl.webgis1.com/hesk" target="_blank" rel="noopener noreferrer">Get help</a>') |>
+                      | <a href="https://marsh01.ecs.umass.edu/hesk" target="_blank" rel="noopener noreferrer">Get help</a>') |>
          addProviderTiles(providers$Esri.WorldTopoMap) |>
          addWMSTiles(
-            'https://umassdsl.webgis1.com/geoserver/wms',
+            'https://marsh01.ecs.umass.edu/geoserver/wms',
             layers = switch(session$userData$maptype , 'DEPhabitat:DEPhabitat', 'DEPhabitat:fivecolor'),
             options = WMSTileOptions(opacity = switch(session$userData$maptype , 0.25, 0.4))) |>
          setView(lng = home[1], lat = home[2], zoom = zoom) |>
